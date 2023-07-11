@@ -1,0 +1,26 @@
+.aboutMe{
+  width: 80vw;
+  height: 35vh;
+}
+.aboutMeHeader{
+  width: 80vw;
+  height: 5vh;
+}
+.aboutMeFooter{
+  width: 80vw;
+  height: 30vh;
+  background-color: bisque;
+}
+.project{
+  width: 80vw;
+  height: 45vh;
+}
+.projectHeader{
+  width: 80vw;
+  height: 5vh;
+}
+.projectFooter{
+  width: 80vw;
+  height: 40vh;
+  background-color: bisque;
+}
