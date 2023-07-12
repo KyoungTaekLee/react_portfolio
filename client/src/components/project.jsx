@@ -5,10 +5,12 @@ function ProjectComponent(props) {
   return (
     <div className="project">
       <div className="projectHeader">
-        <h1>Project</h1>
+        Project
       </div>
       <div className='projectFooter'>
-        <h2>직업은 개발자 !</h2>
+        <div className="projectFooterImgOne">
+          <img src={require("./../img/projectC.png")} alt="" className="projectFooterImgOneSize" />
+        </div>
       </div>
     </div>
   )

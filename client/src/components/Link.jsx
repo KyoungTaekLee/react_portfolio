@@ -5,9 +5,10 @@ function LinkComponent(props) {
   return (
     <div className='link'>
       <div className='linkHeader'>
-        link1
+        link
       </div>
       <div className='linkFooter'>
+        link1
         link2
       </div>
     </div>
