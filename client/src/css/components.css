@@ -2,7 +2,7 @@
 
 .aboutMe {
   width: 60vw;
-  height: 35vh;
+  height: 40vh;
 }
 
 .aboutMeHeader {
@@ -199,7 +199,14 @@
   background-color: lightgray;
 }
 
-
+.linkFooterSet{
+  width: 30vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
 
 /* 공통 CSS */
 
