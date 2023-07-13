@@ -13,7 +13,21 @@ function AboutComponent(props) {
             Language
           </div>
           <div className="skillFooterImgLanguage">
-            <img src={require("./../img/Language.png")} className="imgSize" />
+            <div className="skillFooterImgLanguageSize">
+              <img src={require("./../img/html.png")} className="imgSize" />
+            </div>
+            <div className="skillFooterImgLanguageSize">
+              <img src={require("./../img/java.png")} className="imgSize" />
+            </div>
+            <div className="skillFooterImgLanguageSize">
+              <img src={require("./../img/javascript.png")} className="imgSize" />
+            </div>
+            <div className="skillFooterImgLanguageSize">
+              <img src={require("./../img/typescript.png")} className="imgSize" />
+            </div>
+            <div className="skillFooterImgLanguageSize">
+              <img src={require("./../img/python.png")} className="imgSize" />
+            </div>
           </div>
         </div>
         <div className="skillFooterImgSet">
@@ -21,7 +35,18 @@ function AboutComponent(props) {
             FrameWork
           </div>
           <div className="skillFooterImgFrameWork">
-            <img src={require("./../img/FrameWork.png")} className="imgSize" />
+            <div className="skillFooterImgLanguageSize">
+              <img src={require("./../img/react.png")} className="imgSize" />
+            </div>
+            <div className="skillFooterImgLanguageSize">
+              <img src={require("./../img/nodejs.png")} className="imgSize" />
+            </div>
+            <div className="skillFooterImgLanguageSize">
+              <img src={require("./../img/nestjs.png")} className="imgSize" />
+            </div>
+            <div className="skillFooterImgLanguageSize">
+              <img src={require("./../img/flask.png")} className="imgSize" />
+            </div>
           </div>
         </div>
         <div className="skillFooterImgSet">
@@ -29,7 +54,12 @@ function AboutComponent(props) {
             DataBase
           </div>
           <div className="skillFooterImgDataBase">
-            <img src={require("./../img/DataBase.png")} className="imgSize" />
+            <div className="skillFooterImgLanguageSize">
+              <img src={require("./../img/mysql.png")} className="imgSize" />
+            </div>
+            <div className="skillFooterImgLanguageSize">
+              <img src={require("./../img/mongodb.png")} className="imgSize" />
+            </div>
           </div>
         </div>
         <div className="skillFooterImgSet">
@@ -37,7 +67,9 @@ function AboutComponent(props) {
             Cloud
           </div>
           <div className="skillFooterImgCloud">
-            <img src={require("./../img/Cloud.png")} className="imgSize" />
+            <div className="skillFooterImgLanguageSize">
+              <img src={require("./../img/firebase.png")} className="imgSize" />
+            </div>
           </div>
         </div>
       </div>
