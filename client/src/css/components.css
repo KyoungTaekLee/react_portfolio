@@ -1,24 +1,24 @@
 /* 여기서부터 aboutMe component */
 
 .aboutMe {
-  width: 80vw;
+  width: 60vw;
   height: 35vh;
-  background-color: aqua;
 }
 
 .aboutMeHeader {
-  width: 80vw;
-  height: 5vh;
-  background-color: red;
+  width: 60vw;
+  height: 10vh;
+  font-size: 30px;
+  background-color: whitesmoke;
 }
 
 .aboutMeFooter {
-  width: 80vw;
+  width: 60vw;
   height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: bisque;
+  background-color: lightgray;
 }
 
 .aboutMeFooterIntro {
@@ -27,7 +27,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: yellow;
+  background-color: lightgray;
 }
 
 .aboutMeFooterSkill {
@@ -36,7 +36,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: red;
+  background-color: lightgray;
 }
 
 
@@ -46,28 +46,28 @@
 
 
 .skill{
-  width: 80vw;
-  height: 85vh;
-  background-color: aqua;
+  width: 60vw;
+  height: 90vh;
 }
 
 .skillHeader {
-  width: 80vw;
-  height: 5vh;
-  background-color: red;
+  width: 60vw;
+  height: 10vh;
+  font-size: 30px;
+  background-color: whitesmoke;
 }
 
 .skillFooter {
-  width: 80vw;
+  width: 60vw;
   height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: bisque;
+  background-color: lightgray;
 }
 
 .skillFooterImgSet{
-  width: 80vw;
+  width: 60vw;
   height: 20vh;
   display: flex;
   flex-direction: column;
@@ -75,7 +75,7 @@
 }
 
 .skillFooterImgName{
-  width: 80vw;
+  width: 60vw;
   height: 5vh;
   display: flex;
   align-items: center;
@@ -129,26 +129,26 @@
 
 
 .project {
-  width: 80vw;
+  width: 60vw;
   height: 90vh;
-  background-color: aqua;
 }
 
 .projectHeader {
-  width: 80vw;
-  height: 5vh;
-  background-color: red;
+  width: 60vw;
+  height: 10vh;
+  font-size: 30px;
+  background-color: whitesmoke;
 
 }
 
 .projectFooter {
-  width: 80vw;
+  width: 60vw;
   height: 85vh;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  background-color: bisque;
+  background-color: lightgray;
 }
 
 .projectFooterImgSet {
@@ -178,25 +178,25 @@
 
 
 .link {
-  width: 80vw;
+  width: 60vw;
   height: 20vh;
-  background-color: blue;
 }
 
 .linkHeader {
-  width: 80vw;
-  height: 5vh;
-  background-color: red;
+  width: 60vw;
+  height: 10vh;
+  font-size: 30px;
+  background-color: whitesmoke;
 }
 
 .linkFooter {
-  width: 80vw;
+  width: 60vw;
   height: 20vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: bisque;
+  background-color: lightgray;
 }
 
 
@@ -208,7 +208,7 @@
 .no-underline {
   text-decoration: none;
   width: 5vw;
-  height: 10vh;
+  height: 11vh;
 }
 
 .imgSize {
