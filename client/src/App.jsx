@@ -1,4 +1,5 @@
 import AboutMe from './components/aboutMe'
+import Skill from './components/skill'
 import Project from './components/project'
 import Link from './components/Link'
 import './App.css'
@@ -10,6 +11,7 @@ function App() {
         Port Folio
       </div>
       <AboutMe />
+      <Skill />
       <Project />
       <Link />
     </div>
