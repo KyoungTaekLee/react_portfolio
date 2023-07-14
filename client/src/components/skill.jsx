@@ -49,26 +49,28 @@ function AboutComponent(props) {
             </div>
           </div>
         </div>
-        <div className="skillFooterImgSet">
-          <div className="skillFooterImgName">
-            DataBase
-          </div>
-          <div className="skillFooterImgDataBase">
-            <div className="skillFooterImgLanguageSize">
-              <img src={require("./../img/mysql.png")} className="imgSize" />
+        <div className="skillFooterImgSetTwo">
+          <div className="skillFooterImgSetTwoInner">
+            <div className="skillFooterImgName">
+              DataBase
             </div>
-            <div className="skillFooterImgLanguageSize">
-              <img src={require("./../img/mongodb.png")} className="imgSize" />
+            <div className="skillFooterImgDataBase">
+              <div className="skillFooterImgLanguageSize">
+                <img src={require("./../img/mysql.png")} className="imgSize" />
+              </div>
+              <div className="skillFooterImgLanguageSize">
+                <img src={require("./../img/mongodb.png")} className="imgSize" />
+              </div>
             </div>
           </div>
-        </div>
-        <div className="skillFooterImgSet">
-          <div className="skillFooterImgName">
-            Cloud
-          </div>
-          <div className="skillFooterImgCloud">
-            <div className="skillFooterImgLanguageSize">
-              <img src={require("./../img/firebase.png")} className="imgSize" />
+          <div className="skillFooterImgSetTwoInner">
+            <div className="skillFooterImgName">
+              Cloud
+            </div>
+            <div className="skillFooterImgCloud">
+              <div className="skillFooterImgLanguageSize">
+                <img src={require("./../img/firebase.png")} className="imgSize" />
+              </div>
             </div>
           </div>
         </div>
