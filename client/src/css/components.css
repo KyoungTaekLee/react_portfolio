@@ -8,7 +8,8 @@
 .aboutMeHeader {
   width: 60vw;
   height: 10vh;
-  font-size: 30px;
+  font-size: 50px;
+  font-weight: 500;
   color: white;
   background-color: black;
   display: flex;
@@ -58,7 +59,8 @@
 .skillHeader {
   width: 60vw;
   height: 10vh;
-  font-size: 30px;
+  font-weight: 500;
+  font-size: 50px;
   color: white;
   background-color: black;
   display: flex;
@@ -171,7 +173,8 @@
 .projectHeader {
   width: 60vw;
   height: 10vh;
-  font-size: 30px;
+  font-weight: 500;
+  font-size: 50px;
   color: white;
   background-color: black;
   display: flex;
@@ -224,7 +227,8 @@
 .linkHeader {
   width: 60vw;
   height: 10vh;
-  font-size: 30px;
+  font-weight: 500;
+  font-size: 50px;
   color: white;
   background-color: black;
   display: flex;
