@@ -2,7 +2,7 @@
 
 .aboutMe {
   width: 60vw;
-  height: 50vh;
+  height: 80vh;
 }
 
 .aboutMeHeader {
@@ -18,17 +18,28 @@
 
 .aboutMeFooter {
   width: 60vw;
-  height: 30vh;
+  height: 60vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-around;
   background-color: lightgray;
   border-radius: 20px;
-
 }
 
+.aboutMeFooterSectionOne{
+  width: 20vw;
+  height: 50vh;
+}
+
+.aboutMeFooterSectionTwo{
+  width: 30vw;
+  height: 50vh;
+}
+
+
 .aboutMeFooterIntro {
-  width: 60vw;
+  width: 20vw;
   height: 10vh;
   display: flex;
   flex-direction: column;
@@ -37,7 +48,7 @@
 }
 
 .aboutMeFooterSkill {
-  width: 60vw;
+  width: 20vw;
   height: 5vh;
   display: flex;
   flex-direction: row;
@@ -289,7 +300,6 @@
 }
 
 .back {
-
   transform: rotateY(180deg);
 }
 
