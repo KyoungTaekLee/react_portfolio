@@ -2,7 +2,7 @@
 
 .aboutMe {
   width: 60vw;
-  height: 40vh;
+  height: 50vh;
 }
 
 .aboutMeHeader {
@@ -51,9 +51,9 @@
 
 
 
-.skill{
+.skill {
   width: 60vw;
-  height: 90vh;
+  height: 100vh;
 }
 
 .skillHeader {
@@ -78,7 +78,7 @@
   justify-content: center;
 }
 
-.skillFooterImgSet{
+.skillFooterImgSet {
   width: 60vw;
   height: 20vh;
   display: flex;
@@ -86,7 +86,7 @@
   align-items: center;
 }
 
-.skillFooterImgSetTwo{
+.skillFooterImgSetTwo {
   width: 60vw;
   height: 20vh;
   display: flex;
@@ -95,7 +95,7 @@
   justify-content: center;
 }
 
-.skillFooterImgSetTwoInner{
+.skillFooterImgSetTwoInner {
   width: 20vw;
   height: 20vh;
   display: flex;
@@ -103,7 +103,7 @@
   align-items: center;
 }
 
-.skillFooterImgName{
+.skillFooterImgName {
   width: 60vw;
   height: 5vh;
   display: flex;
@@ -111,7 +111,7 @@
   justify-content: center;
 }
 
-.skillFooterImgLanguage{
+.skillFooterImgLanguage {
   width: 38vw;
   height: 15vh;
   background-color: white;
@@ -122,12 +122,12 @@
   border-radius: 20px;
 }
 
-.skillFooterImgLanguageSize{
+.skillFooterImgLanguageSize {
   width: 6vw;
   height: 10vh;
 }
 
-.skillFooterImgFrameWork{
+.skillFooterImgFrameWork {
   width: 38vw;
   height: 15vh;
   background-color: white;
@@ -138,7 +138,7 @@
   border-radius: 20px;
 }
 
-.skillFooterImgDataBase{
+.skillFooterImgDataBase {
   width: 18vw;
   height: 15vh;
   background-color: white;
@@ -149,7 +149,7 @@
   border-radius: 20px;
 }
 
-.skillFooterImgCloud{
+.skillFooterImgCloud {
   width: 18vw;
   height: 15vh;
   background-color: white;
@@ -167,7 +167,7 @@
 
 .project {
   width: 60vw;
-  height: 200vh;
+  height: 100vh;
 }
 
 .projectHeader {
@@ -183,9 +183,9 @@
 
 .projectFooter {
   width: 60vw;
-  height: 190vh;
+  height: 80vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: space-around;
   background-color: lightgray;
@@ -199,12 +199,13 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  
+
 }
 
 .projectFooterImg {
   width: 15vw;
   height: 50vh;
+  perspective: 1100px;
 }
 
 .projectFooterImgContent {
@@ -246,7 +247,7 @@
   border-radius: 20px;
 }
 
-.linkFooterSet{
+.linkFooterSet {
   width: 30vw;
   height: 20vh;
   display: flex;
@@ -270,8 +271,28 @@
   height: 100%;
 }
 
-.imgSizeProject{
+.card {
   width: 100%;
   height: 100%;
+  position: relative;
+  transition: .4s;
+  transform-style: preserve-3d;
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
   border-radius: 20px;
+}
+
+.back {
+
+  transform: rotateY(180deg);
+}
+
+.projectFooterImg:hover .card {
+  transform: rotateY(180deg);
 }
