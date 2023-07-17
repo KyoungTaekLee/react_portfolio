@@ -7,8 +7,8 @@
 
 .aboutMeHeader {
   width: 60vw;
-  height: 10vh;
-  font-size: 50px;
+  height: 20vh;
+  font-size: 100px;
   font-weight: 500;
   color: white;
   background-color: black;
@@ -18,7 +18,7 @@
 
 .aboutMeFooter {
   width: 60vw;
-  height: 60vh;
+  height: 70vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -73,9 +73,9 @@
 
 .skillHeader {
   width: 60vw;
-  height: 10vh;
+  height: 20vh;
   font-weight: 500;
-  font-size: 50px;
+  font-size: 100px;
   color: white;
   background-color: black;
   display: flex;
@@ -84,7 +84,7 @@
 
 .skillFooter {
   width: 60vw;
-  height: 80vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -187,9 +187,9 @@
 
 .projectHeader {
   width: 60vw;
-  height: 10vh;
+  height: 20vh;
   font-weight: 500;
-  font-size: 50px;
+  font-size: 100px;
   color: white;
   background-color: black;
   display: flex;
@@ -198,7 +198,7 @@
 
 .projectFooter {
   width: 60vw;
-  height: 80vh;
+  height: 70vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -242,9 +242,9 @@
 
 .linkHeader {
   width: 60vw;
-  height: 10vh;
+  height: 40vh;
   font-weight: 500;
-  font-size: 50px;
+  font-size: 100px;
   color: white;
   background-color: black;
   display: flex;
@@ -253,7 +253,7 @@
 
 .linkFooter {
   width: 60vw;
-  height: 20vh;
+  height: 50vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
