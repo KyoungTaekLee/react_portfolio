@@ -23,32 +23,32 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  color: #a9aba8;
-  /* border-radius: 20px; */
-  /* box-shadow:  -5px -5px 40px 5px #3E3E3D, 5px 5px 40px 5px #888886; */
-  /* opacity: 0.9; */
-  /* box-shadow: 20px 20px 30px white; */
 }
 
 .aboutMeFooterSectionOne{
   width: 20vw;
   height: 50vh;
-  box-shadow: 10px 10px 5px;
+  box-shadow: 5px 5px 5px 5px;
+  color: gray;
 }
 
 .aboutMeFooterSectionTwo{
   width: 20vw;
   height: 50vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 
 .aboutMeFooterIntro {
   width: 20vw;
   height: 10vh;
+  font-size: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* border-radius: 20px; */
 }
 
 .aboutMeFooterSkill {
@@ -88,7 +88,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: lightgray;
+  color: white;
+  font-size: 20px;
   border-radius: 20px;
   justify-content: center;
 }
@@ -107,7 +108,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .skillFooterImgSetTwoInner {
@@ -120,21 +121,22 @@
 
 .skillFooterImgName {
   width: 60vw;
-  height: 5vh;
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .skillFooterImgLanguage {
-  width: 38vw;
+  width: 50vw;
   height: 15vh;
   background-color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  border-radius: 20px;
+  /* border-radius: 20px; */
+  box-shadow: 5px 5px 10px 5px rgb(113, 107, 107), -5px -5px 10px 5px rgb(79, 74, 74);
 }
 
 .skillFooterImgLanguageSize {
@@ -143,36 +145,36 @@
 }
 
 .skillFooterImgFrameWork {
-  width: 38vw;
+  width: 50vw;
   height: 15vh;
   background-color: white;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  border-radius: 20px;
+  box-shadow: 5px 5px 10px 5px rgb(113, 107, 107), -5px -5px 10px 5px rgb(79, 74, 74);
 }
 
 .skillFooterImgDataBase {
-  width: 18vw;
+  width: 20vw;
   height: 15vh;
   background-color: white;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  border-radius: 20px;
+  box-shadow: 5px 5px 10px 5px rgb(113, 107, 107), -5px -5px 10px 5px rgb(79, 74, 74);
 }
 
 .skillFooterImgCloud {
-  width: 18vw;
+  width: 20vw;
   height: 15vh;
   background-color: white;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  border-radius: 20px;
+  box-shadow: 5px 5px 10px 5px rgb(113, 107, 107), -5px -5px 10px 5px rgb(79, 74, 74);
 }
 
 
@@ -198,13 +200,22 @@
 
 .projectFooter {
   width: 60vw;
-  height: 70vh;
+  height: 60vh;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   color: lightgray;
   border-radius: 20px;
+}
+.projectNotice {
+  width: 60vw;
+  height: 10vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
 }
 
 .projectFooterImgSet {

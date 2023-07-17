@@ -4,9 +4,11 @@ import './../css/components.css'
 function ProjectComponent(props) {
   return (
     <div className="project">
+
       <div className="projectHeader">
         Project
       </div>
+
       <div className='projectFooter'>
         <div className="projectFooterImgSet">
           <div className="projectFooterImg">
@@ -24,6 +26,7 @@ function ProjectComponent(props) {
             </div>
           </div>
         </div>
+
         <div className="projectFooterImgSet">
           <div className="projectFooterImg">
             <div className="card">
@@ -40,6 +43,7 @@ function ProjectComponent(props) {
             </div>
           </div>
         </div>
+
         <div className="projectFooterImgSet">
           <div className="projectFooterImg">
             <div className="card">
@@ -57,6 +61,9 @@ function ProjectComponent(props) {
           </div>
         </div>
       </div>
+        <div className="projectNotice">
+          🫲마우스를 사진 위에 올려주세요🫱
+        </div>
     </div>
   )
 }
