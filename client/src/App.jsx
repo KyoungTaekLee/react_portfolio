@@ -13,6 +13,8 @@ function App() {
   const targetProject = useRef(null);
   const targetContactMe = useRef(null);
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
   const handleScroll = (event) => {
     // 마우스 휠을 아래로 스크롤할 때마다 페이지가 100vh씩 이동하도록 처리
     if (event.deltaY > 0) {
@@ -34,25 +36,9 @@ function App() {
     };
   }, []);
 
-  const TopClick = () => {
-    targetTop.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+   const scrollToRef = (ref) => {
+    ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
-
-  const AboutMeClick = () => {
-    targetAboutMe.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  };
-
-  const SkillClick = () => {
-    targetSkill.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
-
-  const ProjectClick = () => {
-    targetProject.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
-
-  const ContactMeClick = () => {
-    targetContactMe.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
 
   return (
     <div className='App' ref={targetTop}>
@@ -64,11 +50,11 @@ function App() {
       <div class="chevron"></div>
       <span class="text">Scroll down</span>
       <div className='AppButtonSet'>
-        <button onClick={TopClick} className='AppButtonStyle'>Top</button>
-        <button onClick={AboutMeClick} className='AppButtonStyle'>AboutMe</button>
-        <button onClick={SkillClick} className='AppButtonStyle'>Skill</button>
-        <button onClick={ProjectClick} className='AppButtonStyle'>Project</button>
-        <button onClick={ContactMeClick} className='AppButtonStyle'>ContactMe</button>
+        <button onClick={() => scrollToRef(targetTop)} className='AppButtonStyle'>Top</button>
+        <button onClick={() => scrollToRef(targetAboutMe)} className='AppButtonStyle'>AboutMe</button>
+        <button onClick={() => scrollToRef(targetSkill)} className='AppButtonStyle'>Skill</button>
+        <button onClick={() => scrollToRef(targetProject)} className='AppButtonStyle'>Project</button>
+        <button onClick={() => scrollToRef(targetContactMe)} className='AppButtonStyle'>ContactMe</button>
       </div>
       <div ref={targetAboutMe}>
         <AboutMe />
