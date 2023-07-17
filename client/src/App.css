@@ -120,8 +120,7 @@
   }
 }
 
-.active {
-  background-color: #f0f0f0;
-  /* 활성화된 메뉴에 대한 스타일 설정 */
+.hoverEffect{
+  background-color: aquamarine;
 }
 
