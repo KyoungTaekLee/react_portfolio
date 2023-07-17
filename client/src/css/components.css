@@ -305,24 +305,24 @@
   height: 50vh;
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
   color: lightgray;
   border-radius: 20px;
 }
 
 .contactMeFooterSet {
-  width: 40vw;
-  height: 30vh;
+  width: 50vw;
+  height: 40vh;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .contactMeFooterSetImg{
-  width: 80%;
-  height: 80%;
+  width: 10vw;
+  height: 20vh;
 }
 
 /* 공통 CSS */

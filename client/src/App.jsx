@@ -28,29 +28,22 @@ function App() {
 
   const applyHoverEffect = () => {
     const windowHeight = window.innerHeight;
-    const currentPosition = window.scrollY;
+    const currentPosition = window.scrollY + windowHeight/2;
 
     // 각 섹션의 위치를 계산하여 현재 활성화된 버튼을 갱신
-    if (
-      currentPosition >= targetContactMe.current.offsetTop - windowHeight / 2
-    ) {
+    if (currentPosition >= targetContactMe.current.offsetTop) {
       setActiveButton('contactMe');
-    } else if (
-      currentPosition >= targetProject.current.offsetTop - windowHeight / 2
-    ) {
+    } else if (currentPosition >= targetProject.current.offsetTop) {
       setActiveButton('project');
-    } else if (
-      currentPosition >= targetSkill.current.offsetTop - windowHeight / 2
-    ) {
+    } else if (currentPosition >= targetSkill.current.offsetTop) {
       setActiveButton('skill');
-    } else if (
-      currentPosition >= targetAboutMe.current.offsetTop - windowHeight / 2
-    ) {
+    } else if (currentPosition >= targetAboutMe.current.offsetTop) {
       setActiveButton('aboutMe');
-    } else {
+    } else if (currentPosition >= targetTop.current.offsetTop) {
       setActiveButton('top');
     }
   };
+
 
   useEffect(() => {
     window.addEventListener('wheel', handleScroll);
@@ -76,31 +69,31 @@ function App() {
           onClick={() => scrollToRef(targetTop, 'top')}
           className={`AppButtonStyle ${activeButton === 'top' ? 'hoverEffect' : ''}`}
         >
-          Top
+          
         </button>
         <button
           onClick={() => scrollToRef(targetAboutMe, 'aboutMe')}
           className={`AppButtonStyle ${activeButton === 'aboutMe' ? 'hoverEffect' : ''}`}
         >
-          AboutMe
+       
         </button>
         <button
           onClick={() => scrollToRef(targetSkill, 'skill')}
           className={`AppButtonStyle ${activeButton === 'skill' ? 'hoverEffect' : ''}`}
         >
-          Skill
+       
         </button>
         <button
           onClick={() => scrollToRef(targetProject, 'project')}
           className={`AppButtonStyle ${activeButton === 'project' ? 'hoverEffect' : ''}`}
         >
-          Project
+         
         </button>
         <button
           onClick={() => scrollToRef(targetContactMe, 'contactMe')}
           className={`AppButtonStyle ${activeButton === 'contactMe' ? 'hoverEffect' : ''}`}
         >
-          ContactMe
+          
         </button>
       </div>
       <div ref={targetAboutMe}>
