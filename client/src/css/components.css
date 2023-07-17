@@ -204,7 +204,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   color: lightgray;
   border-radius: 20px;
 }
@@ -219,13 +219,12 @@
 }
 
 .projectFooterImgSet {
-  width: 50vw;
-  height: 60vh;
+  width: 53vw;
+  height: 50vh;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-
 }
 
 .projectFooterImg {
@@ -236,60 +235,13 @@
 
 .projectFooterImgContent {
   width: 15vw;
-  height: 30vh;
-
-}
-
-
-
-/* 여기서 부터 link component */
-
-
-
-.link {
-  width: 60vw;
-  height: 100vh;
-}
-
-.linkHeader {
-  width: 60vw;
-  height: 40vh;
-  font-weight: 500;
-  font-size: 100px;
-  color: white;
-  background-color: black;
-  display: flex;
-  align-items: end;
-}
-
-.linkFooter {
-  width: 60vw;
   height: 50vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  color: lightgray;
-  border-radius: 20px;
+
 }
-
-.linkFooterSet {
-  width: 30vw;
-  height: 20vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-}
-
-/* 공통 CSS */
-
-
 
 .no-underline {
   text-decoration: none;
-  width: 5vw;
-  height: 11vh;
+
 }
 
 .imgSize {
@@ -298,8 +250,8 @@
 }
 
 .card {
-  width: 100%;
-  height: 100%;
+  width: 15vw;
+  height: 50vh;
   position: relative;
   transition: .4s;
   transform-style: preserve-3d;
@@ -310,8 +262,14 @@
   position: absolute;
   width: 100%;
   height: 100%;
+  background-color: white;
+  color: black;
   backface-visibility: hidden;
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
 }
 
 .back {
@@ -321,3 +279,53 @@
 .projectFooterImg:hover .card {
   transform: rotateY(180deg);
 }
+
+/* 여기서 부터 link component */
+
+
+
+.contactMe {
+  width: 60vw;
+  height: 100vh;
+}
+
+.contactMeHeader {
+  width: 60vw;
+  height: 40vh;
+  font-weight: 500;
+  font-size: 100px;
+  color: white;
+  background-color: black;
+  display: flex;
+  align-items: end;
+}
+
+.contactMeFooter {
+  width: 60vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  color: lightgray;
+  border-radius: 20px;
+}
+
+.contactMeFooterSet {
+  width: 40vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contactMeFooterSetImg{
+  width: 80%;
+  height: 80%;
+}
+
+/* 공통 CSS */
+
+
+

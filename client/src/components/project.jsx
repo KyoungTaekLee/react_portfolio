@@ -25,9 +25,9 @@ function ProjectComponent(props) {
               </div>
             </div>
           </div>
-        </div>
+        
 
-        <div className="projectFooterImgSet">
+        
           <div className="projectFooterImg">
             <div className="card">
               <img src={require("./../img/projectA.png")} className="front" />
@@ -41,10 +41,10 @@ function ProjectComponent(props) {
                 </a>
               </div>
             </div>
-          </div>
+          
         </div>
 
-        <div className="projectFooterImgSet">
+        
           <div className="projectFooterImg">
             <div className="card">
               <img src={require("./../img/projectB.png")} className="front" />
