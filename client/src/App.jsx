@@ -59,6 +59,10 @@ function App() {
       <div className='AppHeader' >
         Port Folio
       </div>
+      <div class="chevron"></div>
+      <div class="chevron"></div>
+      <div class="chevron"></div>
+      <span class="text">Scroll down</span>
       <div className='AppButtonSet'>
         <button onClick={TopClick} className='AppButtonStyle'>Top</button>
         <button onClick={AboutMeClick} className='AppButtonStyle'>AboutMe</button>
