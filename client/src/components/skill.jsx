@@ -4,12 +4,12 @@ import './../css/components.css'
 function AboutComponent(props) {
   return (
     <div className="skill">
-      <div className="skillHeader">
+      <div className="skillHeader font">
         Skill
       </div>
       <div className='skillFooter'>
         <div className="skillFooterImgSet">
-          <div className="skillFooterImgName">
+          <div className="skillFooterImgName font">
             Language
           </div>
           <div className="skillFooterImgLanguage">
@@ -31,7 +31,7 @@ function AboutComponent(props) {
           </div>
         </div>
         <div className="skillFooterImgSet">
-          <div className="skillFooterImgName">
+          <div className="skillFooterImgName font">
             FrameWork
           </div>
           <div className="skillFooterImgFrameWork">
@@ -51,7 +51,7 @@ function AboutComponent(props) {
         </div>
         <div className="skillFooterImgSetTwo">
           <div className="skillFooterImgSetTwoInner">
-            <div className="skillFooterImgName">
+            <div className="skillFooterImgName font">
               DataBase
             </div>
             <div className="skillFooterImgDataBase">
@@ -64,7 +64,7 @@ function AboutComponent(props) {
             </div>
           </div>
           <div className="skillFooterImgSetTwoInner">
-            <div className="skillFooterImgName">
+            <div className="skillFooterImgName font">
               Cloud
             </div>
             <div className="skillFooterImgCloud">

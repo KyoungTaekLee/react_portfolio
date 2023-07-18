@@ -51,8 +51,12 @@ function App() {
   }, []);
 
   return (
+
     <div className='App' ref={targetTop}>
-      <div className='AppHeader'>Port Folio</div>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+      </style>
+      <div className='AppHeader font'>Port Folio</div>
       <div className="chevron"></div>
       <div className="chevron"></div>
       <div className="chevron"></div>

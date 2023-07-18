@@ -4,7 +4,7 @@ import './../css/components.css';
 function ContactMecomponent(props) {
   return (
     <div className='contactMe'>
-      <div className='contactMeHeader'>
+      <div className='contactMeHeader font'>
         Contact Me
       </div>
       <div className='contactMeFooter'>
