@@ -123,7 +123,8 @@
   width: 60vw;
   height: 20vh;
   display: flex;
-  align-items: center;
+  align-items: end;
+  margin-bottom: 10px;
   justify-content: center;
 }
 
@@ -200,7 +201,7 @@
 
 .projectFooter {
   width: 60vw;
-  height: 60vh;
+  height: 65vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -210,7 +211,7 @@
 }
 .projectNotice {
   width: 60vw;
-  height: 10vh;
+  height: 5vh;
   color: white;
   display: flex;
   justify-content: center;
