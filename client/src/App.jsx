@@ -13,28 +13,20 @@ function App() {
   const targetProject = useRef(null);
   const targetContactMe = useRef(null);
   const [activeButton, setActiveButton] = useState(null);
-  const [isTopButtonHovered, setIsTopButtonHovered] = useState(false);
+  const [isTopButtonHoveredTop, setIsTopButtonHoveredTop] = useState(false);
+  const [isTopButtonHoveredAboutMe, setIsTopButtonHoveredAboutMe] = useState(false);
+  const [isTopButtonHoveredSkill, setIsTopButtonHoveredSkill] = useState(false);
+  const [isTopButtonHoveredProject, setIsTopButtonHoveredProject] = useState(false);
+  const [isTopButtonHoveredContactMe, setIsTopButtonHoveredContactMe] = useState(false);
 
   const scrollToRef = (ref, button) => {
     setActiveButton(button);
     ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
-  //  const handleScroll = (event) => {
-  //   if (event.deltaY > 0) {
-  //     const windowHeight = window.innerHeight;
-  //     scroll.scrollMore(windowHeight);
-  //   } else if (event.deltaY < 0) {
-  //     const windowHeight = window.innerHeight;
-  //     scroll.scrollMore(-windowHeight);
-  //   }
-  //   applyHoverEffect();
-  // };
-
-
   const applyHoverEffect = () => {
     const windowHeight = window.innerHeight;
-    const currentPosition = window.scrollY + windowHeight/2;
+    const currentPosition = window.scrollY + windowHeight / 2;
 
     // 각 섹션의 위치를 계산하여 현재 활성화된 버튼을 갱신
     if (currentPosition >= targetContactMe.current.offsetTop) {
@@ -68,36 +60,44 @@ function App() {
       <div className='AppButtonSet'>
         <button
           onClick={() => scrollToRef(targetTop, 'top')}
-          onMouseEnter={() => setIsTopButtonHovered(true)} 
-          onMouseLeave={() => setIsTopButtonHovered(false)} 
+          onMouseEnter={() => setIsTopButtonHoveredTop(true)}
+          onMouseLeave={() => setIsTopButtonHoveredTop(false)}
           className={`AppButtonStyle ${activeButton === 'top' ? 'hoverEffect' : ''}`}
         >
-          <div className='mouseOver'>{isTopButtonHovered ? 'Top' : ''}</div>
+          <div className='mouseOver'>{isTopButtonHoveredTop ? 'Top' : ''}</div>
           {/* {isTopButtonHovered ? 'Top' : ''} */}
         </button>
         <button
           onClick={() => scrollToRef(targetAboutMe, 'aboutMe')}
+          onMouseEnter={() => setIsTopButtonHoveredAboutMe(true)}
+          onMouseLeave={() => setIsTopButtonHoveredAboutMe(false)}
           className={`AppButtonStyle ${activeButton === 'aboutMe' ? 'hoverEffect' : ''}`}
         >
-       
+          <div className='mouseOver'>{isTopButtonHoveredAboutMe ? 'AboutMe' : ''}</div>
         </button>
         <button
           onClick={() => scrollToRef(targetSkill, 'skill')}
+          onMouseEnter={() => setIsTopButtonHoveredSkill(true)}
+          onMouseLeave={() => setIsTopButtonHoveredSkill(false)}
           className={`AppButtonStyle ${activeButton === 'skill' ? 'hoverEffect' : ''}`}
         >
-       
+          <div className='mouseOver'>{isTopButtonHoveredSkill ? 'Skill' : ''}</div>
         </button>
         <button
           onClick={() => scrollToRef(targetProject, 'project')}
+          onMouseEnter={() => setIsTopButtonHoveredProject(true)}
+          onMouseLeave={() => setIsTopButtonHoveredProject(false)}
           className={`AppButtonStyle ${activeButton === 'project' ? 'hoverEffect' : ''}`}
         >
-         
+          <div className='mouseOver'>{isTopButtonHoveredProject ? 'Project' : ''}</div>
         </button>
         <button
           onClick={() => scrollToRef(targetContactMe, 'contactMe')}
+          onMouseEnter={() => setIsTopButtonHoveredContactMe(true)}
+          onMouseLeave={() => setIsTopButtonHoveredContactMe(false)}
           className={`AppButtonStyle ${activeButton === 'contactMe' ? 'hoverEffect' : ''}`}
         >
-          
+          <div className='mouseOver'>{isTopButtonHoveredContactMe ? 'ContactMe' : ''}</div>
         </button>
       </div>
       <div ref={targetAboutMe}>
