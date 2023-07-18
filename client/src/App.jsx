@@ -15,16 +15,21 @@ function App() {
   const [activeButton, setActiveButton] = useState(null);
   const [isTopButtonHovered, setIsTopButtonHovered] = useState(false);
 
-  const handleScroll = (event) => {
-    if (event.deltaY > 0) {
-      const windowHeight = window.innerHeight;
-      scroll.scrollMore(windowHeight);
-    } else if (event.deltaY < 0) {
-      const windowHeight = window.innerHeight;
-      scroll.scrollMore(-windowHeight);
-    }
-    applyHoverEffect();
+  const scrollToRef = (ref, button) => {
+    setActiveButton(button);
+    ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
+
+  //  const handleScroll = (event) => {
+  //   if (event.deltaY > 0) {
+  //     const windowHeight = window.innerHeight;
+  //     scroll.scrollMore(windowHeight);
+  //   } else if (event.deltaY < 0) {
+  //     const windowHeight = window.innerHeight;
+  //     scroll.scrollMore(-windowHeight);
+  //   }
+  //   applyHoverEffect();
+  // };
 
 
   const applyHoverEffect = () => {
@@ -47,16 +52,11 @@ function App() {
 
 
   useEffect(() => {
-    window.addEventListener('wheel', handleScroll);
+    window.addEventListener('wheel', applyHoverEffect);
     return () => {
-      window.removeEventListener('wheel', handleScroll);
+      window.removeEventListener('wheel', applyHoverEffect);
     };
   }, []);
-
-  const scrollToRef = (ref, button) => {
-    setActiveButton(button);
-    ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  };
 
   return (
     <div className='App' ref={targetTop}>
