@@ -24,14 +24,15 @@
 
 .AppButtonSet{
   position: fixed;
-  width: 5vw;
+  width: 10vw;
   height: 20vh;
   left: 0vw; 
   top: 40vh; 
   z-index: 9999;  
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
+  margin-left: 1vw;
   justify-content: space-around;
 }
 
@@ -39,6 +40,9 @@
  width: 1vw;
  height: 2vh;
  border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
 
 .container {
@@ -126,6 +130,13 @@
 }
 
 .hoverEffect{
-  background-color: aquamarine;
+  background-color: rgb(3, 203, 3);
 }
 
+.mouseOver{
+  color: white;
+  width: 5vw;
+  height: 3vh;
+  display: flex;
+  justify-content: end;
+}

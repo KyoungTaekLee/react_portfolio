@@ -13,6 +13,7 @@ function App() {
   const targetProject = useRef(null);
   const targetContactMe = useRef(null);
   const [activeButton, setActiveButton] = useState(null);
+  const [isTopButtonHovered, setIsTopButtonHovered] = useState(false);
 
   const handleScroll = (event) => {
     if (event.deltaY > 0) {
@@ -67,9 +68,12 @@ function App() {
       <div className='AppButtonSet'>
         <button
           onClick={() => scrollToRef(targetTop, 'top')}
+          onMouseEnter={() => setIsTopButtonHovered(true)} 
+          onMouseLeave={() => setIsTopButtonHovered(false)} 
           className={`AppButtonStyle ${activeButton === 'top' ? 'hoverEffect' : ''}`}
         >
-          
+          <div className='mouseOver'>{isTopButtonHovered ? 'Top' : ''}</div>
+          {/* {isTopButtonHovered ? 'Top' : ''} */}
         </button>
         <button
           onClick={() => scrollToRef(targetAboutMe, 'aboutMe')}
